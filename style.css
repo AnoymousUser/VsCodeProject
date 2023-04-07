@@ -1,0 +1,14 @@
+body {
+    font: 1.5rem monospace;
+    cursor: none;
+    background-color: black;
+    color: whitesmoke;
+}
+
+.cursor {
+    height: 100px;
+    width: 100px;
+    background-color: orange;
+    border: 3px dashed royalblue;
+    border-radius: 50%;
+}

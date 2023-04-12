@@ -69,21 +69,30 @@ body {
 /* Main title end */
 
 .circle {
+    display: grid;
+    place-content: center;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     outline: 3px black dashed;
     outline-offset: 10px;
     border-radius: 50%;
 }
 
+.circle a {
+    text-decoration: none;
+    color: var(--moonstone);
+}
+
 #CircleOne {
+    top: 200px;
+    left: 100px;
     background-color: var(--red);
     outline-color: var(--red);
     animation-name: CircleOneMovement;
-    animation-duration: 5s;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
     transition: 400ms ease;
 }
@@ -95,32 +104,27 @@ body {
 }
 
 @keyframes CircleOneMovement {
-    from {
-        transform: rotate(0deg);
-        top: 10px;
-        left: 10px;
+    to {
+        top: 200px;
+        left: 100px;
     }
 
     20% {
-        transform: rotate(60deg);
         top: 100px;
         left: 200px;
     }
 
     40% {
-        transform: rotate(120deg);
         top: 300px;
         left: 150px;
     }
 
     60% {
-        transform: rotate(180deg);
-        top: 500px;
+        top: 400px;
         left: 1000px;
     }
 
     80% {
-        transform: rotate(240deg);
         top: 100px;
         left: 800px;
     }

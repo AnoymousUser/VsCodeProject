@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Audiowide");
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Pixels&display=swap');
 
 * {
     padding: 0;
@@ -10,24 +10,18 @@
     /* CSS HEX */
     --dark-orange-web: #ff8c00ff;
     --orange-web: #ffa500ff;
+    --light-orange-web: #feac5b;
     --blue: #0000ffff;
     --ultramarine: #000090ff;
     --moonstone: rgb(0, 142, 174);
 }
 
 body {
-    min-height: 500vh;
-    font-size: 1.5rem;
-    font-family: "Audiowide", sans-serif;
-    background-color: var(--ultramarine);
-    color: var(--moonstone);
-}
-
-.BackgroundImage {
-    background-image: url(OceanBackground.jpg);
-    background-size: cover;
-    max-width: 100vw;
     min-height: 100vh;
+    font-size: 1.5rem;
+    font-family: 'Rubik Pixels', cursive;
+    background-image: url(NavyBlueBackground.jpg);
+    background-size: cover;
 }
 
 .TitleHolder {
@@ -39,17 +33,23 @@ body {
     z-index: 2;
 }
 
-.TitleBackgroundColor {
-    margin-top: 50vh;
-    background-color: var(--moonstone);
+.TitleHolder div {
+    margin-top: 30vh;
     max-width: fit-content;
     min-height: 100vh;
 }
 
 .Title {
     color: var(--dark-orange-web);
+    transition: 400ms ease;
 }
 
-.Subtitle {
+.Subtitle, .Title span:hover {
     color: var(--orange-web);
+    transition: 400ms ease;
+}
+
+.Subtitle span:hover {
+    color: var(--light-orange-web);
+    transition: 400ms ease;
 }

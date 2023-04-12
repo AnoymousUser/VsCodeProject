@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Color pallete*/
+    --dark-orange-web: #ff8c00ff;
+    --orange-web: #ffa500ff;
+    --light-orange-web: #feac5b;
+    --ultramarine: #000090ff;
+    --moonstone: rgb(0, 142, 174);
+
+    /* Extra colors */
+    --dark-red: darkred;
+    --red: #f00;
+    --orange: #fc0;
+    --yellow: #ff0;
+    --green: #0f0;
+    --dark-green: darkgreen;
+    --light-blue: #0ff;
+    --blue: #00f;
+    --dark-blue: darkblue;
+    --purple: purple;
+    --pink: pink;
+}
+
+body {
+    min-height: 100vh;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    background-color: var(--ultramarine);
+    min-height: 100vh;
+    min-width: 100vw; 
+}
+
+/* Main title beginning */
+.TitleHolder {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.TitleHolder div {
+    margin-top: 30vh;
+}
+
+.Title {
+    color: var(--dark-orange-web);
+    transition: 400ms ease;
+}
+
+.Subtitle, .Title span:hover {
+    color: var(--orange-web);
+    transition: 400ms ease;
+}
+
+.Subtitle span:hover {
+    color: var(--light-orange-web);
+    transition: 400ms ease;
+}
+/* Main title end */
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    outline: 3px black dashed;
+    outline-offset: 10px;
+    border-radius: 50%;
+}
+
+#CircleOne {
+    background-color: var(--red);
+    outline-color: var(--red);
+    animation-name: CircleOneMovement;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    transition: 400ms ease;
+}
+
+#CircleOne:hover {
+    background-color: var(--dark-red);
+    outline-color: var(--dark-red);
+    transition: 400ms ease;
+}
+
+@keyframes CircleOneMovement {
+    from {
+        transform: rotate(0deg);
+        top: 10px;
+        left: 10px;
+    }
+
+    20% {
+        transform: rotate(60deg);
+        top: 100px;
+        left: 200px;
+    }
+
+    40% {
+        transform: rotate(120deg);
+        top: 300px;
+        left: 150px;
+    }
+
+    60% {
+        transform: rotate(180deg);
+        top: 500px;
+        left: 1000px;
+    }
+
+    80% {
+        transform: rotate(240deg);
+        top: 100px;
+        left: 800px;
+    }
+}

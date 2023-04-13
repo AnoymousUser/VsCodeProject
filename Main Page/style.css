@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 * {
     padding: 0;
@@ -31,20 +31,30 @@
 body {
     min-height: 100vh;
     font-size: 1.5rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .container {
-    background-color: var(--ultramarine);
+    position: relative;
     min-height: 100vh;
     min-width: 100vw; 
+}
+
+.blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(var(--ultramarine), var(--ultramarine), black);
+  filter: blur(1px);
+  z-index: -1;
 }
 
 /* Main title beginning */
 .TitleHolder {
     display: grid;
-    justify-content: center;
-    align-items: center;
+    place-content: center;
     z-index: 2;
 }
 
@@ -53,8 +63,13 @@ body {
 }
 
 .Title {
+    display: inline;
     color: var(--dark-orange-web);
     transition: 400ms ease;
+}
+
+.Title span:nth-child(1) {
+   margin-left: 1rem;
 }
 
 .Subtitle, .Title span:hover {
@@ -129,3 +144,29 @@ body {
         left: 800px;
     }
 }
+
+#CircleTwo {
+    background-color: black;
+    left: 500px;
+    top: 200px;
+    animation-name: CircleTwoMovement;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transition: 400ms ease;
+}
+
+@keyframes CircleTwoMovement {
+    20% {
+        left: 500px;
+        top: 400px;
+    }
+
+    40% {
+        left: 1000px;
+    }
+
+    60% {
+        top: 20px;
+    }
+}
+

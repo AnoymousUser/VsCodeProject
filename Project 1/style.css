@@ -1,0 +1,26 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font: 1.5rem monospace;
+    min-height: 200vh;
+    color: whitesmoke;
+}
+
+.NavBar {
+    min-width: 80vw;
+    min-height: 15vh;
+    background-color: black;
+    display: grid;
+    justify-content: center;
+}
+
+#Activate {
+    background-color: white;
+    border: none;
+    min-width: 100px;
+    min-height: 100px;
+}

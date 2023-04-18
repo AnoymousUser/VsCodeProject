@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta name="title" content="Hashir Farooq's portfolio">
+    <meta name="description" content="Hashir Farooq's portfolio that is also somewhat my blog">
+    <meta name="keywords" content="Blog, portfolio, coder, writer">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="English">
+    <meta name="author" content="Hashir Farooq">
+    <title>Hashir Farooq</title>
+</head>
+<body>
+    <div id="blob"></div>
+    <script>
+        const blob = document.getElementById("blob");
+
+        document.body.onpointermove = event => {
+            const {clientX, clientY} = event;
+
+            blob.style.left = `${clientX}px`;
+            blob.style.top = `${clientY}px`
+        }
+    </script>
+</body>
+</html>

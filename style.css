@@ -1,0 +1,22 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: black;
+    color: whitesmoke;
+}
+
+#blob {
+    width: 100px;
+    min-height: 100px;
+    background-image: radial-gradient(whitesmoke, black);
+    z-index: -1;
+    position: absolute;
+}

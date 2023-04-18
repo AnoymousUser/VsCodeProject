@@ -18,9 +18,11 @@
 
         document.body.onpointermove = event => {
             const {clientX, clientY} = event;
+            let pixelX = clientX - 150;
+            let pixelY = clientY - 150;
 
-            blob.style.left = `${clientX}px`;
-            blob.style.top = `${clientY}px`
+            blob.style.left = `${pixelX}px`;
+            blob.style.top = `${pixelY}px`
         }
     </script>
 </body>

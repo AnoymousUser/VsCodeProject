@@ -14,12 +14,20 @@ body {
     color: whitesmoke;
 }
 
+#blur {
+    min-width: 100vw;
+    min-height: 100vh;
+    position: absolute;
+    z-index: 2;
+    backdrop-filter: blur(100px);
+}
+
 #blob {
-    filter: blur(30px);
-    filter: opacity(80%);
+    filter: blur(50px), opacity(80%);
     width: 300px;
     min-height: 300px;
-    background-image: linear-gradient(lightblue, lightblue, navy, lightblue, lightblue);
+    background-image: linear-gradient( #FF7C00, #D56F15, #AB622A,#3F405D, blue, navy );
+    /* #FF7C00, #D56F15, #AB622A,#3F405D, blue, navy */
     border: black;
     border-radius: 50%;
     z-index: -1;
@@ -37,4 +45,11 @@ body {
     to {
         rotate: 360deg;
     }
+}
+
+.title {
+    min-width: 100px;
+    min-height: 100px;
+    color: whitesmoke;
+    z-index: 3;
 }

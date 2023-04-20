@@ -18,7 +18,7 @@ body {
     min-width: 100vw;
     min-height: 100vh;
     position: absolute;
-    z-index: 2;
+    z-index: 0;
     backdrop-filter: blur(100px);
 }
 
@@ -45,11 +45,4 @@ body {
     to {
         rotate: 360deg;
     }
-}
-
-.title {
-    min-width: 100px;
-    min-height: 100px;
-    color: whitesmoke;
-    z-index: 3;
 }
